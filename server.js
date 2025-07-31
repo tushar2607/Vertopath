@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // API routes
-app.use('/api/contact', contactRoute);
+app.use('/contact', contactRoute);
 
 // Fallback to index.html
 app.get('*', (req, res) => {
